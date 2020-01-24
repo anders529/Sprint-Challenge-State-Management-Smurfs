@@ -4,7 +4,6 @@ export const GRAB_SMURF_COMPLETE = 'GRAB_SMURF_COMPLETE';
 export const GRAB_SMURFS_FAILED = 'GRAB_SMURFS_FAILED';
 export const ADDING_SMURF = 'ADDING_SMURF';
 export const ADD_SMURF = 'ADD_SMURF';
-export const ADDING_SMURF_COMPLETE = 'ADDING_SMURF_COMPLETE';
 export const grabSmurfs = () => {
 return render => {
     render({type:START_GRAB_SMURF});
