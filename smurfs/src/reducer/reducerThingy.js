@@ -12,8 +12,8 @@ const initialState = {
 export const reducerThingy = (state = initialState, action) => {
     switch (action.type) {
         case START_GRAB_SMURF: return {...state, isGrabbing: true, error: ''};
-        case GRAB_SMURF_COMPLETE: return {...state, smurfs:action.payload, isGrabbing:true, error: ''};
-        case GRAB_SMURFS_FAILED: return {...state,isGrabbing:true, error: action.payload};
+        case GRAB_SMURF_COMPLETE: return {...state, smurfs: action.payload, isGrabbing: true, error: ''};
+        case GRAB_SMURFS_FAILED: return {...state,isGrabbing: true, error: action.payload};
         case ADDING_SMURF: return {...state,isGrabbing:true,error: ''};
-        case ADD_SMURF: return {...state,isGrabbing:true,error: '', smurfs:action.payload};
+        case ADD_SMURF: return {...state,isGrabbing: true, error: '', smurfs: action.payload};
         default: return state;}};
