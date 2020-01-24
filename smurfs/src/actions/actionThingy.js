@@ -14,10 +14,10 @@ return render => {
         .catch(error => {
             render({type:GRAB_SMURFS_FAILED})
         })}};
-export const addSmurfs = smurf => {
+export const addSmurfs = smurfs => {
 return render => {
     render({type:ADDING_SMURF});
-    axios.post('http://localhost:3333/smurfs', smurf)
+    axios.post('http://localhost:3333/smurfs', smurfs)
         .then(response => {
             render({type:ADD_SMURF, payload:response.data})
         })
