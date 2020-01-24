@@ -1,9 +1,9 @@
 import React, {useEffect} from 'react';
-const Smurfs = ({ getSmurfs, smurfs, isGrabbing}) => {
+const Smurfs = ({getSmurfs, smurfs, isGrabbing}) => {
     useEffect(()=> {
         getSmurfs();
         },[]);
-        if(isGrabbing) return <h3>Getting Smurfs</h3>;
+        if(isGrabbing) return <h3>Finding A Smurf</h3>;
             return (
                 <div>{smurfs.map((item, index) => {
                     return (
