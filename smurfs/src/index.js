@@ -5,6 +5,7 @@ import App from './components/App';
 import {createStore, applyMiddleware} from 'redux';
 import {Provider} from 'react-redux';
 import thunk from 'redux-thunk';
+import {store} from "core-js";
 
 ReactDOM.render(
     <Provider store={store}>
